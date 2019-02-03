@@ -5,14 +5,11 @@ $(document).ready(function () {
 });
 
 function contact() {
-    if (document.getElementById('contact').style.display === 'block') {
-        document.getElementById('contact').style.display = 'none'
-    } else {
+    if (document.getElementById('contact').style.display === 'none') {
         document.getElementById('contact').style.display = 'block'
-    }
+    } 
 }
 function cancel(){
-    debugger
-    contact();
+    document.getElementById('contact').style.display = 'none'
 }
 
