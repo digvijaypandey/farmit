@@ -1,6 +1,6 @@
 $(document).ready(function () {
     $("#searchBtn").click(function () {
-        $('.search-container').slideToggle();
+        $('.search-container').slideToggle(1000);
     });
 });
 

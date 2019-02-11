@@ -10,6 +10,8 @@
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700%7CDancing+Script%7CMontserrat:400,700%7CMerriweather:400,300italic%7CLato:400,700,900">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
     <!-- script -->
     <script src='js/jquery-3.3.1.min.js'></script>
@@ -24,14 +26,13 @@
     <div class="card">
         <div class="top-container">
             <div class="col ">
-
                 <div class="row">
                     <div class="col">
                         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                             <ol class="carousel-indicators">
                                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                 <li data-target="#carouselExampleIndicators" data-slide-to="2"></li> 
                             </ol>
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
@@ -95,19 +96,19 @@
             </div>
         </div>
 
-        <div id="myHeader">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="container">
-                    <div class="col-3">
+        <div id="myHeader" class="content">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <div class="col-3 col-sm col-md">
                         <a class="navbar-brand" href="#">
-                        <img src="images/logo5.png" alt="">
-                    </a>
+                            <!-- <img src="images/logo5.png" alt=""> -->
+                        </a>
                     </div>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                               <span class="navbar-toggler-icon"></span>
                             </button>
-                    <div class="col-9">
+                    <div class="col-9 col-sm col-md-9">
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav mr-auto">
                                 <li class="nav-item active">
@@ -123,148 +124,156 @@
                                     <a class="nav-link" href="#">Social Hub</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#contact" class='contact' onClick = 'contact()'>Contact Us</a>
+                                    <a class="nav-link" href="#contact" class='contact' onClick='contact()'>Contact Us</a>
                                 </li>
                             </ul>
                             <form class="form-inline my-2 my-lg-0">
-                                <li class="fa fa-search" id='searchBtn'></li>
-                                <li class="fa fa-shopping-cart"></li>
+                                <li class="fa fa-search" id='searchBtn' style="padding: 20px;"></li>
+                                <li class="fa fa-shopping-cart" style="padding: 20px;"></li>
                             </form>
                         </div>
                     </div>
                 </div>
             </nav>
-        </div>
-
-
-
-        <div class="col-6 search-container">
-            <div class="row">
-                <div class="input-group">
-                    <div class="input-group col-12">
-                        <input type="text" class="form-control" placeholder="Search for product">
-                        <select id="inputState" class="form-control">
+            <div class="col-6 col-sm col-md search-container">
+                <div class="row">
+                    <div class="input-group">
+                        <div class="input-group col-12">
+                            <input type="text" class="form-control" placeholder="Search for product">
+                            <select id="inputState" class="form-control">
                                         <option selected>Select</option>
                                         <option>Product 1</option>
                                         <option>Product 2</option>
                                         <option>Product 3</option>
                                         <option>Product 4</option>
                                       </select>
-                        <div class="input-group-append">
-                            <button class="btn"><i class="fa fa-search"></i></button>
+                            <div class="input-group-append">
+                                <button class="btn"><i class="fa fa-search"></i></button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="container">
-            <div class="tabbable">
+
+
+
+
+
+        
+
+
+        <!-- <div class="container"> -->
+           <div class="tabbable">
                 <ul class="nav nav-tabs">
                     <li class="active"><a href="#tab1" data-toggle="tab">Features</a></li>
                     <li><a href="#tab2" data-toggle="tab">Our Product</a></li>
                 </ul>
-                <div class="tab-content">
-                    <div class="tab-pane active" id="tab1">
-                        <div class="col form-group">
-                            <div class="row">
-                                <div class="col-3 form-group">
-                                    <lable class="forn-control">USB Charging</lable>
+                <div>
+                    <div class="tab-content" id = 'style-1'>
+                        <div class="tab-pane active" id="tab1">
+                            <div class="col form-group col-md col-sm">
+                                <div class="row">
+                                    <div class="col-3 form-group col-md col-sm">
+                                        <lable class="forn-control">USB Charging</lable>
+                                    </div>
+                                    <div class="col-9 form-group col-md col-sm">
+                                        <span>
+                                            <h6>Charge your smartphone on the go.</h6>EUME seamlessly blends stunning aesth...<p class="btn-link" data-toggle="modal" data-target="#usbChargung">Know More</p>
+                                        </span>
+                                    </div>
                                 </div>
-                                <div class="col-3 form-group">
-                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#usbChargung">
-                                    Know More
-                                </button>
-
+                                <div class="row">
+                                    <div class="col-3 form-group col-md col-sm">
+                                        <lable class="forn-control">Ergonomics</lable>
+                                    </div>
+                                    <div class="col-9 form-group col-md col-sm">
+                                        <span>
+                                            <h6>Charge your smartphone on the go.</h6>EUME seamlessly blends stunning aesth...<p class="btn-link" data-toggle="modal" data-target="#ergonomics">Know More</p>
+                                        </span>
+                                    </div>
                                 </div>
-
-                                <div class="col-3 form-group">
-                                    <lable class="forn-control">Ergonomics</lable>
+                                <div class="row">
+                                    <div class="col-3 form-group col-md col-sm">
+                                        <lable class="forn-control">Back Massager</lable>
+                                    </div>
+                                    <div class="col-9 form-group col-md col-sm">
+                                        <span>
+                                            <h6>Charge your smartphone on the go.</h6>EUME seamlessly blends stunning aesth...<p class="btn-link" data-toggle="modal" data-target="#backMassager">Know More</p>
+                                        </span>
+                                    </div>
                                 </div>
-                                <div class="col-3 form-group">
-                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ergonomics">
-                                    Know More
-                                </button>
-
-                                </div>
-                                <div class="col-3 form-group">
-                                    <lable class="forn-control">Back Massager</lable>
-                                </div>
-                                <div class="col-3 form-group">
-                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#backMassager">
-                                    Know More
-                                </button>
-                                </div>
-                                <div class="col-3 form-group">
-                                    <lable class="forn-control">Durability</lable>
-                                </div>
-                                <div class="col-3 form-group">
-                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#durability">
-                                    Know More
-                                </button>
-                                </div>
-                            </div>
-                        </div>
-                        <hr>
-                        <div class="col form-group">
-                            <div class="row form-group">
-                                <div class="col-6">
-                                    <h3>Sleek, Stylish, Surreal.</h3>
-                                    <span>With cutting edge technology seamlessly integrated into an exquisite, tough body, EUME is the ultimate blend of comfort and functionality. It truly is an indispensable companion for every occasion.</span>
-                                </div>
-                                <div class="col-6">
-                                    <img src="images/bags/dailypack.gif" style="height:59%; width:100%">
+                                <div class="row">
+                                    <div class="col-3 form-group col-md col-sm">
+                                        <lable class="forn-control">Durability</lable>
+                                    </div>
+                                    <div class="col-9 form-group col-md col-sm">
+                                        <span>
+                                            <h6>Charge your smartphone on the go.</h6>EUME seamlessly blends stunning aesth...<p class="btn-link" data-toggle="modal" data-target="#durability">Know More</p>
+                                        </span>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="row form-group">
-                                <div class="col-3">
-                                    <img src="images/bags/home-bag.png" style="height:50%; width:100%">
+                            <hr>
+                            <div class="col form-group">
+                                <div class="row form-group">
+                                    <div class="col-6 col-md col-sm">
+                                        <h3>Sleek, Stylish, Surreal.</h3>
+                                        <span>With cutting edge technology seamlessly integrated into an exquisite, tough body, EUME is the ultimate blend of comfort and functionality. It truly is an indispensable companion for every occasion.</span>
+                                    </div>
+                                    <div class="col-6 col-md col-sm">
+                                        <img src="images/bags/dailypack.gif" style="height:300; width:450">
+                                    </div>
                                 </div>
-                                <div class="col-9 prduct_description">
-                                    <ul>
-                                        <li><img src='images/bags/01_i.png'>
-                                            <h3>Built-In Massager</h3>
-                                            <span>Ease out prolonged discomfort by rejuvenating your back muscles on-the-go with our
+                                <div class="row form-group">
+                                    <div class="col-3 col-md col-sm">
+                                        <img src="images/bags/home-bag.png" style="height:300; width:250">
+                                    </div>
+                                    <div class="col-9 prduct_description col-md col-sm">
+                                        <ul>
+                                            <li><img src='images/bags/01_i.png'>
+                                                <h3>Built-In Massager</h3>
+                                                <span>Ease out prolonged discomfort by rejuvenating your back muscles on-the-go with our
                                             patented, built-in massager.</span>
-                                        </li>
-                                    </ul>
-                                    <ul>
-                                        <li><img src='images/bags/02_i.png'>
-                                            <h3>USB Charging</h3>
-                                            <span>Never run out of power! This bag features a USB port that can charge your mobile
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li><img src='images/bags/02_i.png'>
+                                                <h3>USB Charging</h3>
+                                                <span>Never run out of power! This bag features a USB port that can charge your mobile
                                             devices, anywhere, anytime.</span>
-                                        </li>
-                                    </ul>
-                                    <ul>
-                                        <li><img src='images/bags/03_i.png'>
-                                            <h3>Built to Last</h3>
-                                            <span>Forged from the finest, ultra-light fabrics, our highly durables bags come with a free 18 month warranty.</span>
-                                        </li>
-                                    </ul>
-                                    <ul>
-                                        <li><img src='images/bags/feather_icon.png'>
-                                            <h3>Light As A Feather</h3>
-                                            <span>EUME bags are custom engineered to be light yet sturdy, making them ideal for long distance travel.</span>
-                                        </li>
-                                    </ul>
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li><img src='images/bags/03_i.png'>
+                                                <h3>Built to Last</h3>
+                                                <span>Forged from the finest, ultra-light fabrics, our highly durables bags come with a free 18 month warranty.</span>
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li><img src='images/bags/feather_icon.png'>
+                                                <h3>Light As A Feather</h3>
+                                                <span>EUME bags are custom engineered to be light yet sturdy, making them ideal for long distance travel.</span>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                    </div>
-                    <div class="tab-pane" id="tab2">
-                        <div class="col">
-                            <div class="row">
-                                <div class="col" style="text-align:center">
-                                    <h3>Our Backpacks</h3>
-                                    <span>The most functional range of <br>backpacks to help you allievate the
-stress of carrying heavy load.</span>
+                        </div>
+                        <div class="tab-pane" id="tab2">
+                            <div class="col col-sm">
+                                <div class="row">
+                                    <div class="col" style="text-align:center">
+                                        <h3>Our Backpacks</h3>
+                                        <span>The most functional range of <br>backpacks to help you allievate the stress of carrying heavy load.</span>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="row mt-5">
-                                <div class="col-5 productPannel">
-                                    <h5>Daily Pack</h5>
-                                    <span class="mt-5">
+                                <div class="row mt-5">
+                                    <div class="col-5 col-sm mt-5 productPannel ">
+                                        <h5>Daily Pack</h5>
+                                        <span class="mt-5">
                                     In-Built Massager
                                     <br>USB Charging Port
                                     <br>Anti-theft Protection
@@ -273,12 +282,12 @@ stress of carrying heavy load.</span>
                                     <br>High Storage Capacity
                                 </span>
 
-                                    <button type="button" class="btn btn-primary btn-lg btn-block mt-5">Coming Soon</button>
+                                        <button type="button" class="btn btn-primary btn-lg btn-block mt-5">Coming Soon</button>
 
-                                </div>
-                                <div class="col-5 productPannel">
-                                    <h5>Travel Pack</h5>
-                                    <span class="mt-5">
+                                    </div>
+                                    <div class="col-5 col-sm mt-5 productPannel">
+                                        <h5>Travel Pack</h5>
+                                        <span class="mt-5">
                                     In-Built Massager
                                     <br>USB Charging Port
                                     <br>Anti-theft Protection
@@ -291,12 +300,12 @@ stress of carrying heavy load.</span>
                                     <br>High Storage Capacity
                                 </span>
 
-                                    <button type="button" class="btn btn-primary btn-lg btn-block mt-5">Coming Soon</button>
+                                        <button type="button" class="btn btn-primary btn-lg btn-block mt-5">Coming Soon</button>
 
-                                </div>
-                                <div class="col-5 productPannel mt-5">
-                                    <h5>Classic Pack</h5>
-                                    <span class="mt-5">
+                                    </div>
+                                    <div class="col-5 col-sm mt-5 productPannel ">
+                                        <h5>Classic Pack</h5>
+                                        <span class="mt-5">
                                     In-Built Massager
                                     <br>USB Charging Port
                                     <br>Anti-theft Protection
@@ -307,8 +316,9 @@ stress of carrying heavy load.</span>
                                     <br>2 easy Access Pockets
                                 </span>
 
-                                    <button type="button" class="btn btn-primary btn-lg btn-block mt-5">Coming Soon</button>
+                                        <button type="button" class="btn btn-primary btn-lg btn-block mt-5">Coming Soon</button>
 
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -356,7 +366,7 @@ stress of carrying heavy load.</span>
 
                 </div>
             </div>
-        </div>
+        <!-- </div> -->
 
 
 
@@ -534,6 +544,7 @@ stress of carrying heavy load.</span>
     function myFunction() {
         if (window.pageYOffset > sticky) {
             header.classList.add("sticky");
+
         } else {
             header.classList.remove("sticky");
         }
