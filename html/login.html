@@ -1,0 +1,141 @@
+<html>
+<title>
+
+</title>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/login.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div id="myHeader" class="content sticky">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <div class="col-3 col-sm col-md">
+                    <a class="navbar-brand" href="../index.html">
+                    </a>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="col-9 col-sm col-md-9">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Products</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Social Hub</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact" class='contact' onClick='contact()'>Contact Us</a>
+                            </li>
+                        </ul>
+
+                        <form class="form-inline my-2 my-lg-0">
+                            <li>
+                                <a class="nav-link" class='contact' href="../html/login.html">Log In</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" class='contact' href="../html/register.html">Register</a>
+                            </li>
+                            <li class="fa fa-search" id='searchBtn' style="padding: 20px;"></li>
+                            <li class="fa fa-shopping-cart" style="padding: 20px;"></li>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="col-6 col-sm col-md search-container">
+            <div class="row">
+                <div class="input-group">
+                    <div class="input-group col-12">
+                        <input type="text" class="form-control" placeholder="Search for product">
+                        <select id="inputState" class="form-control">
+                            <option selected>Select</option>
+                            <option>Product 1</option>
+                            <option>Product 2</option>
+                            <option>Product 3</option>
+                            <option>Product 4</option>
+                        </select>
+                        <div class="input-group-append">
+                            <button class="btn"><i class="fa fa-search"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header class="masthead">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center justify-content-center text-center">
+                <div class="container">
+                    <div class="d-flex justify-content-center h-100">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3>Sign In</h3>
+                                <div class="d-flex justify-content-end social_icon">
+                                    <span><a href='https://www.facebook.com/' target="new">
+                                            <i class="fa fa-facebook-square"></i></a>
+                                    </span>
+                                    <span><a href='https://www.facebook.com/' target="new">
+                                            <i class="fa fa-google-plus-square"></i></span>
+                                    </a>
+                                    <span><a href='https://www.facebook.com/' target="new">
+                                            <i class="fa fa-twitter-square"></i></span></a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <form>
+                                    <div class="input-group form-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="fa fa-user"></i></span>
+                                        </div>
+                                        <input type="text" class="form-control" placeholder="username" required>
+
+                                    </div>
+                                    <div class="input-group form-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="fa fa-key"></i></span>
+                                        </div>
+                                        <input type="password" class="form-control" placeholder="password" required>
+                                    </div>
+                                    <div class="row align-items-center remember">
+                                        <input type="checkbox">Remember Me
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="submit" value="Login" class="btn float-right login_btn">
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="card-footer">
+                                <div class="d-flex justify-content-center links">
+                                    Don't have an account?<a href="../html/register.html">Sign Up</a>
+                                </div>
+                                <div class="d-flex justify-content-center">
+                                    <a href="#">Forgot your password?</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+</body>
+
+</html>

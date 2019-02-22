@@ -1,0 +1,176 @@
+<html>
+<title>
+
+</title>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/register.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet"
+        href="http://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700%7CDancing+Script%7CMontserrat:400,700%7CMerriweather:400,300italic%7CLato:400,700,900">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <!-- script -->
+    <script src='../js/jquery-3.3.1.min.js'></script>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/custom.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+
+
+    <div id="myHeader" class="content sticky">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <div class="col-3 col-sm col-md">
+                    <a class="navbar-brand" href="../index.html">
+                        <!-- <img src="images/logo5.png" alt=""> -->
+                    </a>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="col-9 col-sm col-md-9">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Products</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Social Hub</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact" class='contact' onClick='contact()'>Contact Us</a>
+                            </li>
+                        </ul>
+                        <!-- <ul>
+                            <li>
+                                <a class="nav-link" href="#contact" class='contact' onClick='contact()'>Contact Us</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="#contact" class='contact' onClick='contact()'>Contact Us</a>
+                            </li>
+                            <li class="fa fa-search" id='searchBtn' style="padding: 20px;"></li>
+                            <li class="fa fa-shopping-cart" style="padding: 20px;"></li>
+                        </ul> -->
+                        <form class="form-inline my-2 my-lg-0">
+                            <li>
+                                <a class="nav-link" class='contact' href="../html/login.html">Log In</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" class='contact' href="../html/register.html">Register</a>
+                            </li>
+                            <li class="fa fa-search" id='searchBtn' style="padding: 20px;"></li>
+                            <li class="fa fa-shopping-cart" style="padding: 20px;"></li>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="col-6 col-sm col-md search-container">
+            <div class="row">
+                <div class="input-group">
+                    <div class="input-group col-12">
+                        <input type="text" class="form-control" placeholder="Search for product">
+                        <select id="inputState" class="form-control">
+                            <option selected>Select</option>
+                            <option>Product 1</option>
+                            <option>Product 2</option>
+                            <option>Product 3</option>
+                            <option>Product 4</option>
+                        </select>
+                        <div class="input-group-append">
+                            <button class="btn"><i class="fa fa-search"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <header class="masthead">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center justify-content-center text-center">
+                <div>
+                    <h4 class="card-title text-center" style='color:#fff'>Create Account</h4>
+                    <form>
+                        <div class="form-group input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+                            </div>
+                            <input name="" class="form-control" placeholder="Full name" type="text" required>
+                        </div> <!-- form-group// -->
+                        <div class="form-group input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
+                            </div>
+                            <input name="" class="form-control" placeholder="Email address" type="email" required>
+                        </div> <!-- form-group// -->
+                        <div class="form-group input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"> <i class="fa fa-phone"></i> </span>
+                            </div>
+                            <select class="custom-select" style="max-width: 120px;">
+                                <option selected="91">+91</option>
+
+                            </select>
+                            <input name="" class="form-control" placeholder="Phone number" type="text" required>
+                        </div> <!-- form-group// -->
+                        <div class="form-group input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"> <i class="fa fa-building"></i> </span>
+                            </div>
+                            <input name="" class="form-control" placeholder="address" type="text-area">
+                        </div> <!-- form-group end.// -->
+                        <div class="form-group input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+                            </div>
+                            <input class="form-control" placeholder="Create password" type="password" id="password"
+                                required />
+                            <div class="pwstrength_viewport_progress"></div>
+                            <!-- <input class="form-control" placeholder="Create password" type="password" required> -->
+                        </div> <!-- form-group// -->
+                        <div class="form-group input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+                            </div>
+                            <input class="form-control" placeholder="Repeat password" id="repassword" type="password"
+                                required>
+                        </div> <!-- form-group// -->
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary btn-block" onclick="register()"> Create Account
+                            </button>
+                        </div> <!-- form-group// -->
+                        <p class="text-center" style='color:#fff'>Have an account? <a href="../html/login.html" style='color: #ffc312;
+                            font-weight: bold;'>Log In</a> </p>
+                    </form>
+
+                </div> <!-- card.// -->
+
+            </div>
+        </div>
+    </header>
+
+
+</body>
+
+</html>
