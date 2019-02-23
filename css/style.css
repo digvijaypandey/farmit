@@ -297,7 +297,7 @@ img {
     border-radius: 2px;
 }
 .content li:hover{
-    background-color:#0474eb !important;
+    background-color:#777879 !important;
     border-radius: 2px;
 }
 .sticky {
@@ -314,6 +314,10 @@ img {
     z-index: 999;
     background-color: #f8f9fa !important;
     color: #000 !important; */
+}
+.sticky li:hover{
+    background-color:#2f86e3 !important;
+    border-radius: 2px;
 }
 .sticky li a{
     /* color:#000 !important; */
