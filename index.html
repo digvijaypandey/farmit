@@ -4,20 +4,17 @@
 </title>
 
 <head>
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet"
-        href="http://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700%7CDancing+Script%7CMontserrat:400,700%7CMerriweather:400,300italic%7CLato:400,700,900">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
     <!-- script -->
     <script src='js/jquery-3.3.1.min.js'></script>
     <script src="js/jquery.js"></script>
-    <!-- <script src="js/custom.js"></script> -->
+    
     <script src="js/bootstrap.js"></script>
     <script src="js/bootstrap.min.js"></script>
 </head>
@@ -26,77 +23,106 @@
 
     <div class="card">
         <div class="top-container">
-            <div class="col ">
-                <div class="row">
-                    <div class="col">
-                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                            <ol class="carousel-indicators">
-                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                            </ol>
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <div class="d-block w-100 carouselImage" style="background-image: url(images/bags/home-bag.png); 
-                                position: relative;background-repeat: no-repeat;text-align: right; " alt="First slide">
-                                        <lable class="carousel_content_1">new special collection</lable><br>
-                                        <h1 class="carousel_content_2">The World’s First Patented Backpack<br> With A
-                                            Built-In Massager</h1>
-                                        <lable class="carousel_content_3">Go on and carry the world on your shoulders.
-                                            We’ve got your back</lable><br>
-                                        <div class="carousel_button">
-                                            <a class="btn" href="#">Shop Now</a>
-                                            <a class="btn" href="#">Features</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="d-block w-100 carouselImage"
-                                        style="background-image: url(images/bags/button-gif.gif); background-repeat: no-repeat;text-align: right; "
-                                        alt="First slide">
-                                        <lable class="carousel_content_1">new special collection</lable><br>
-                                        <h1 class="carousel_content_2">Massager Buttons</h1>
-                                        <lable class="carousel_content_3"><b>Mode 1:</b> Operates the top massagers
-                                            <br><b>Mode 2:</b> Operates the lower massagers
+            <div class="row">
+                <div class="col">
 
-                                            <br><b>Mode 3:</b> Operates both the massagers
+                    <!-- carousel code -->
+                    <div id="carouselExampleIndicators" class="carousel slide">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
 
-                                            <br><b>Mode 4:</b> Switches off both the massagers</lable><br>
-                                        <div class="carousel_button">
-                                            <a class="btn" href="#">Shop Now</a>
-                                            <a class="btn" href="#">Features</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="d-block w-100 carouselImage"
-                                        style="background-image: url(images/bags/height-gif.gif); background-repeat: no-repeat;text-align: right; "
-                                        alt="First slide">
-                                        <lable class="carousel_content_1">new special collection</lable><br>
+                            <!-- first slide -->
+                            <div class="carousel-item active">
+                                <div class="d-block w-100 carouselImage" style="background-image: url(images/bags/home-bag.png); 
+                                    position: relative;background-repeat: no-repeat;text-align: right; "
+                                    alt="First slide">
+                                    <h3 data-animation="animated bounceInLeft">
+                                        <lable class="carousel_content_1">new special collection</lable>
+                                    </h3>
+                                    <h3 data-animation="animated bounceInDown">
                                         <h1 class="carousel_content_2">Adjustable Strap</h1>
+                                    </h3>
+                                    <div data-animation="animated zoomInUp">
                                         <lable class="carousel_content_3">
                                             The Daily Pack and Travel Pack are designed to be universal
                                             <br>to various heights and back sizes. Using the height adjustment
                                             <br>strap at either side of the bag, the user can align the backpack
                                             <br>to their requirements.
-                                            <div class="carousel_button">
-                                                <a class="btn" href="#">Shop Now</a>
-                                                <a class="btn" href="#">Features</a>
-                                            </div>
                                     </div>
+                                    <h3 data-animation="animated bounceInDown">
+                                        <a class="btn" href="#">Shop Now</a>
+                                        <a class="btn" href="#">Features</a>
+                                    </h3>
                                 </div>
                             </div>
-                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
-                                data-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
-                                data-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Next</span>
-                            </a>
+
+                            <!-- second slide -->
+                            <div class="carousel-item">
+                                <div class="d-block w-100 carouselImage"
+                                    style="background-image: url(images/bags/button-gif.gif); background-repeat: no-repeat;text-align: right; "
+                                    alt="second slide">
+                                    <h3 data-animation="animated bounceInDown">
+                                        <lable class="carousel_content_1">new special collection</lable>
+                                    </h3>
+                                    <h3 data-animation="animated bounceInUp">
+                                        <h1 class="carousel_content_2">Massager Buttons</h1>
+                                    </h3>
+                                    <div data-animation="animated zoomInRight">
+                                        <lable class="carousel_content_3"><b>Mode 1:</b> Operates the top massagers
+                                            <br><b>Mode 2:</b> Operates the lower massagers
+
+                                            <br><b>Mode 3:</b> Operates both the massagers
+
+                                            <br><b>Mode 4:</b> Switches off both the massagers</lable>
+                                    </div>
+                                    <h3 data-animation="animated zoomInLeft">
+                                        <a class="btn" href="#">Shop Now</a>
+                                        <a class="btn" href="#">Features</a>
+                                    </h3>
+                                </div>
+                            </div>
+
+                            <!-- third slide -->
+                            <div class="carousel-item">
+                                <div class="d-block w-100 carouselImage"
+                                    style="background-image: url(images/bags/height-gif.gif); background-repeat: no-repeat;text-align: right; "
+                                    alt="third slide">
+                                    <h3 data-animation="animated zoomInLeft">
+                                        <lable class="carousel_content_1">new special collection</lable>
+                                    </h3>
+                                    <h3 data-animation="animated flipInX">
+                                        <h1 class="carousel_content_2">Adjustable Strap</h1>
+                                    </h3>
+                                    <div data-animation="animated lightSpeedIn">
+                                        <lable class="carousel_content_3">
+                                            The Daily Pack and Travel Pack are designed to be universal
+                                            <br>to various heights and back sizes. Using the height adjustment
+                                            <br>strap at either side of the bag, the user can align the backpack
+                                            <br>to their requirements.
+                                    </div>
+                                    <h3 data-animation="animated zoomInLeft">
+                                        <a class="btn" href="#">Shop Now</a>
+                                        <a class="btn" href="#">Features</a>
+                                    </h3>
+                                </div>
+                            </div>
                         </div>
+
+                        <!-- controls -->
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
+                            data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
+                            data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
                     </div>
 
                 </div>
@@ -120,8 +146,7 @@
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav mr-auto">
                                 <li class="nav-item active">
-                                    <a class="nav-link" href="./index.html">Home <span
-                                            class="sr-only">(current)</span></a>
+                                    <a class="nav-link" href="./index.html"><i class="fa fa-home"></i> Home</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#">About Us</a>
@@ -329,7 +354,7 @@
                                                 </p>
                                             </div>
                                             <div class="card-footer">
-                                                    <a class="btn btn-lg btn-block">Coming Soon</a>
+                                                <a class="btn btn-lg btn-block">Coming Soon</a>
                                             </div>
                                         </div>
                                     </div>
@@ -379,7 +404,7 @@
 
                                             </div>
                                             <div class="card-footer">
-                                                    <a class="btn btn-lg btn-block">Coming Soon</a>
+                                                <a class="btn btn-lg btn-block">Coming Soon</a>
                                             </div>
                                         </div>
                                     </div>
@@ -605,6 +630,46 @@
     }
 
 </script>
+
+<script>
+    (function ($) {
+        //Function to animate slider captions
+        function doAnimations(elems) {
+            //Cache the animationend event in a variable
+            var animEndEv = "webkitAnimationEnd animationend";
+
+            elems.each(function () {
+                var $this = $(this),
+                    $animationType = $this.data("animation");
+                $this.addClass($animationType).one(animEndEv, function () {
+                    $this.removeClass($animationType);
+                });
+            });
+        }
+
+        //Variables on page load
+        var $myCarousel = $("#carouselExampleIndicators"),
+            $firstAnimatingElems = $myCarousel
+                .find(".carousel-item:first")
+                .find("[data-animation ^= 'animated']");
+
+        //Initialize carousel
+        $myCarousel.carousel();
+
+        //Animate captions in first slide on page load
+        doAnimations($firstAnimatingElems);
+
+        //Other slides to be animated on carousel slide event
+        $myCarousel.on("slide.bs.carousel", function (e) {
+            var $animatingElems = $(e.relatedTarget).find(
+                "[data-animation ^= 'animated']"
+            );
+            doAnimations($animatingElems);
+        });
+    })(jQuery);
+
+</script>
+<script src="js/custom.js"></script>
 </body>
 
 </html>
