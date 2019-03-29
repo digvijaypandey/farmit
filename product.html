@@ -72,7 +72,67 @@
                     <img id='image2' src="../images/bags/bag2.jpg">
                     <img id='image3' src="../images/bags/bag3.jpg">
                     <img id='image4' src="../images/bags/bag4.jpg">
-                    <img id='image5' src="../images/bags/bag5.jpg">
+                </div>
+                <div class="col-sm-4">
+                    <img src="" style="height: 300px;border: 1px solid;min-width: 318px;" id='showImage'>
+                </div>
+                <div class="col-sm-5">
+                    <h5>Details</h5>
+                    <p id='discription'>test comes here</p>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- // carousal image with next previous image -->
+        <!-- <div class="col">
+            <div class="row" id='slider'>
+                <button class="btn btn-primary" value='-' onclick="changeImage(event.target.value)"><i
+                        class="fa fa-caret-left"></i></button>
+
+                <div class="productDetails1" id='box'>
+                    <div>
+                        <a href="#"><img src="../images/bags/bag1.jpg"></a>
+
+                        <a href="#"><img src="../images/bags/bag2.jpg"></a>
+
+                        <a href="#"><img src="../images/bags/bag3.jpg"></a>
+
+                        <a href="#"><img src="../images/bags/bag4.jpg"></a>
+
+                        <a href="#"><img src="../images/bags/bag5.jpg"></a>
+
+                        <a href="#"><img src="../images/bags/bag1.jpg"></a>
+
+                        <a href="#"><img src="../images/bags/bag2.jpg"></a>
+
+                        <a href="#"><img src="../images/bags/bag3.jpg"></a>
+
+                        <a href="#"><img src="../images/bags/bag4.jpg"></a>
+
+                        <a href="#"><img src="../images/bags/bag5.jpg"></a>
+                    </div>
+
+                </div>
+                <button class="btn btn-primary" value='+' onclick="changeImage(event.target.value)"><i
+                        class="fa fa-caret-right"></i>
+                </button>
+
+            </div>
+        </div> -->
+
+
+
+
+
+
+        <!-- <div class="col">
+            <div class="row">
+                <div class="col-sm-1 productDetails" id='dispalyImgDiv' onclick='displayImage(event)'>
+                    <img id='image1' src="../images/bags/bag1.jpg">
+                    <img id='image2' src="../images/bags/bag2.jpg">
+                    <img id='image3' src="../images/bags/bag3.jpg">
+                    <img id='image4' src="../images/bags/bag4.jpg">
                 </div>
                 <div class="col-sm-4">
                     <img src="../images/bags/bag1.jpg" style="height: 300px;border: 1px solid;min-width: 318px;" id='showImage'>
@@ -83,10 +143,8 @@
 
                 </div>
             </div>
-        </div>
-
-       
-        <div class ="row">
+        </div> -->
+         <div class ="row">
             
             <div class="col-sm-8 productDetails2" id='dispalyImgDiv'>
                     <img id='1' src="" onclick="displayImageFromArray(event.target.id)">
@@ -101,6 +159,26 @@
     </div>
 
 
+
+
+
+
+
+
+
+
+    <!-- <script>
+        var images = document.getElementById('carousalImgDiv');
+        var imageArray = ['../images/bags/bag2.jpg', '../images/bags/bag3.jpg', '../images/bags/bag4.jpg', '../images/bags/bag5.jpg']
+        var imageIndex = 1;
+        function carousalImage() {
+            imageIndex++
+            images.setAttribute('src', imageArray[imageIndex])
+            if (imageIndex > imageArray.length) {
+                imageIndex = 0
+            }
+        }
+    </script> -->
 
 
     <!-- Footer -->

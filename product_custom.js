@@ -5,12 +5,8 @@ $(document).ready(function () {
         document.getElementById(i).src = '../images/bags/bag' + i + '.jpg'
 
     }
-    // document.getElementById('showImage').src = '../images/bags/bag_' + 1 + '.jpg'
+    document.getElementById('showImage').src = '../images/bags/bag' + 1 + '.jpg'
 });
-
-
-
-
 
 function displayImage(event) {
     event = event || window.event;
@@ -21,13 +17,6 @@ function displayImage(event) {
         return;
     }
 }
-
-
-
-
-
-
-
 
 // on click display image and description
 
@@ -58,8 +47,6 @@ function displayImageFromArray(value) {
             imageArray: [{ src: '../images/bags/bag4.jpg' },
             { src: '../images/bags/bag5.jpg' },
             { src: '../images/bags/bag5.jpg' },
-            { src: '../images/bags/bag5.jpg' },
-            { src: '../images/bags/bag5.jpg' }
             ],
             discription: 'discription2'
         }, {
@@ -70,25 +57,39 @@ function displayImageFromArray(value) {
             { src: '../images/bags/bag5.jpg' }
             ],
             discription: 'discription3'
+        },
+        {
+            imageArray: [{ src: '../images/bags/bag5.jpg' },
+            { src: '../images/bags/bag5.jpg' },
+            { src: '../images/bags/bag5.jpg' },
+            { src: '../images/bags/bag5.jpg' },
+            { src: '../images/bags/bag5.jpg' }
+            ],
+            discription: 'discription4'
         }]
     if (array.length < value) {
         alert('no record found')
     } else {
-        for (i = 0; i < 5; i++) {
+        for (i = 0; i < array.length; i++) {
             if (value == i) {
                 document.getElementById('discription').innerHTML = array[i].discription;
 
                 array[i].imageArray.forEach(function (element, elementIndex) {
                     sideThumbnail.push(element)
                     console.log(sideThumbnail)
-                    
+                    var j = 1;
                     sideThumbnail.forEach(function (sideElement, sideElementIndex) {
                         // document.getElementById('image' + i).src = sideElement.src;
 
+                        console.log(element)
+                        console.log(elementIndex)
+                        // document.getElementById('image' + j).setAttribute("src", sideElement.src);
+                        // j++;
+
                         if (sideElementIndex == 0) {
-                            document.getElementById('image1').src = sideElement.src
+                            /*document.getElementById('image1').src = sideElement.src*/
                             document.getElementById('showImage').src = sideElement.src
-                        } else if (sideElementIndex == 1) {
+                        } /*else if (sideElementIndex == 1) {
                             document.getElementById('image2').src = sideElement.src
                         } else if (sideElementIndex == 2) {
                             document.getElementById('image3').src = sideElement.src
@@ -98,8 +99,34 @@ function displayImageFromArray(value) {
                             document.getElementById('image5').src = sideElement.src
                         } else {
                             alert('no record found')
+                        }*/
+
+
+                        for (i = 1; i < sideThumbnail.length; i++) {
+                            if (sideThumbnail.length > i) {
+                                document.getElementById('image' + i).style.display = "none";
+
+
+                            } else {
+
+                                document.getElementById('image' + i).style.display = "block";
+
+                            }
                         }
+
+
+                        // if (sideThumbnail.length < sideElementIndex) {
+                        //     for (i = 1; i < sideThumbnail.length; i++) {
+                        //         document.getElementById('image' + i).style.display = "none";
+                        //     }
+
+                        // } else {
+                        //     for (i = 1; i < sideThumbnail.length; i++) {
+                        //         document.getElementById('image' + i).style.display = "block";
+                        //     }
+                        // }
                     })
+
 
                 });
             }
@@ -176,3 +203,5 @@ function changeImage(value) {
     }
     sliderContent.innerHTML = '<img src= ' + imageArray[i - 1].imagePath + '>'
 }
+
+// owl carousal
